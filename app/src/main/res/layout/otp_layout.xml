@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_">
+
+    <LinearLayout
+        android:id="@+id/login_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@mipmap/bg_"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/verificationCode"
+        android:fontFamily="@font/opensans_bold"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/opensans_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/codeVerifyMsg"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.mukesh.OtpView
+            android:id="@+id/otp_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:inputType="number"
+            android:itemBackground="@color/transparent"
+            android:textColor="@android:color/white"
+            app:itemCount="4"
+            app:itemSpacing="25dp"
+            app:lineColor="@color/white"
+            app:lineWidth="2dp"
+            android:cursorVisible="true"
+            app:cursorColor="@color/white"
+            app:cursorWidth="2dp"
+
+            app:viewType="line"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/otpSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/button_background"
+            android:text="@string/submit"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/opensans_regular"
+            android:textSize="12sp"
+            android:textAllCaps="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>
