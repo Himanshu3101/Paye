@@ -8,11 +8,12 @@
     <string name="forgotPassword">Forgot Password</string>
     <string name="verificationCode">Verification Code</string>
     <string name="codeVerifyMsg">Please type the verification code sent to +91-9910XXXXXX</string>
+
     <string name="title_activity_dashboard">Dashboard</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Mila Kunis</string>
+    <string name="nav_header_subtitle">+91-9910609284</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
@@ -22,4 +23,8 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+    <string name="wallet">Wallet  \u20B9</string>
+    <string name="recharge">Prepaid Recharge</string>
+    <string name="dthrecharge">DTH Recharge</string>
+    <string name="dataCardRecharge">Data Card Recharge</string>
 </resources>

@@ -1,34 +1,310 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Dashboard.Dashboard_Activity">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lineView"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight=".1"
+                android:layout_marginLeft="30dp"
+                android:clickable="true"
+                android:elevation="3dp"
+                android:focusableInTouchMode="true"
+                card_view:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="136dp"
+                    android:layout_height="109dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/transparent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@mipmap/prepaid_recharge" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="@string/recharge"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textColor="@color/textColor"
+                    android:textSize="12dp"/>
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight=".1"
+                android:layout_marginLeft="30dp"
+                android:clickable="true"
+                android:elevation="3dp"
+                android:focusableInTouchMode="true"
+                card_view:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="136dp"
+                    android:layout_height="109dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/transparent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+
+                        android:layout_marginRight="5dp"
+                        android:background="@mipmap/dth_recharge" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/dthrecharge"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textColor="@color/textColor"
+                    android:textSize="12dp"/>
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight=".1"
+                android:layout_marginLeft="30dp"
+                android:clickable="true"
+                android:elevation="3dp"
+                android:focusableInTouchMode="true"
+                card_view:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="136dp"
+                    android:layout_height="109dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/transparent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@mipmap/datacard" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="18dp"
+                    android:text="@string/dataCardRecharge"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textColor="@color/textColor"
+                    android:textSize="12dp"/>
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight=".1"
+                android:layout_marginLeft="30dp"
+                android:clickable="true"
+                android:elevation="3dp"
+                android:focusableInTouchMode="true"
+                card_view:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="136dp"
+                    android:layout_height="109dp"
+                    android:background="@color/transparent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="18dp"
+                        android:background="@mipmap/electricity" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/dthrecharge"
+                    android:layout_marginLeft="26dp"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textColor="@color/textColor"
+                    android:textSize="12dp"/>
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/lineView"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/balanceShow"
+        android:layout_marginTop="10dp"
+        android:background="@color/InputtextColor" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/balanceShow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/appBar"
+        android:orientation="horizontal">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/wallet_72" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/opensans_regular"
+                android:text="@string/wallet"
+                android:textColor="@color/textColor"
+                android:textSize="15sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/walletBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/opensans_regular"
+                android:text="15.29/-"
+                android:textColor="@color/textColor"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:background="@mipmap/aeps_72" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/opensans_regular"
+                android:text="@string/wallet"
+                android:textColor="@color/textColor"
+
+                android:textSize="15sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/aepsBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/opensans_regular"
+                android:text="15.29/-"
+                android:textColor="@color/textColor"
+                android:textSize="15sp" />-->
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorPrimary"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="30dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
 
-    <include layout="@layout/content_dashboard" />
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>
