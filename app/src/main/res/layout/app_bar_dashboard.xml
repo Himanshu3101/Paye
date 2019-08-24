@@ -5,18 +5,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f5f5f5"
     tools:context=".Dashboard.Dashboard_Activity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/lineView"
+        android:layout_alignParentBottom="true"
+        android:clipToPadding="false"
+        android:clipChildren="false"
         android:orientation="vertical">
 
-        <LinearLayout
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:visibility="visible"
+            android:layout_margin="20dp"
+            android:divider="@android:color/holo_blue_dark"
+            android:dividerHeight="0.0px"
+            android:clipToPadding="false"
+            android:clipChildren="false"
             android:layout_marginTop="40dp"
+            card_view:cardElevation="10dp"
+            card_view:cardPreventCornerOverlap="false">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <androidx.appcompat.widget.LinearLayoutCompat
@@ -24,40 +41,34 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_weight=".1"
-                android:layout_marginLeft="30dp"
                 android:clickable="true"
                 android:elevation="3dp"
                 android:focusableInTouchMode="true"
                 card_view:cardBackgroundColor="@color/white">
 
                 <LinearLayout
-                    android:layout_width="136dp"
-                    android:layout_height="109dp"
-                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:background="@color/transparent"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="right"
-                        android:layout_marginTop="18dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
                         android:background="@mipmap/prepaid_recharge" />
 
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/recharge"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/opensans_bold"
+                        android:textColor="@color/textColor"
+                        android:textSize="12dp"/>
+
                 </LinearLayout>
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="25dp"
-                    android:text="@string/recharge"
-                    android:fontFamily="@font/opensans_bold"
-                    android:textColor="@color/textColor"
-                    android:textSize="12dp"/>
-
-
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -66,90 +77,80 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_weight=".1"
-                android:layout_marginLeft="30dp"
                 android:clickable="true"
                 android:elevation="3dp"
                 android:focusableInTouchMode="true"
                 card_view:cardBackgroundColor="@color/white">
 
                 <LinearLayout
-                    android:layout_width="136dp"
-                    android:layout_height="109dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:background="@color/transparent"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="right"
-
-                        android:layout_marginRight="5dp"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
                         android:background="@mipmap/dth_recharge" />
 
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/dthrecharge"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/opensans_bold"
+                        android:textColor="@color/textColor"
+                        android:textSize="12dp"/>
+
                 </LinearLayout>
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="20dp"
-                    android:text="@string/dthrecharge"
-                    android:fontFamily="@font/opensans_bold"
-                    android:textColor="@color/textColor"
-                    android:textSize="12dp"/>
-
 
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal">
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_weight=".1"
-                android:layout_marginLeft="30dp"
                 android:clickable="true"
                 android:elevation="3dp"
                 android:focusableInTouchMode="true"
                 card_view:cardBackgroundColor="@color/white">
 
                 <LinearLayout
-                    android:layout_width="136dp"
-                    android:layout_height="109dp"
-                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:background="@color/transparent"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="right"
-                        android:layout_marginTop="18dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
                         android:background="@mipmap/datacard" />
 
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/dataCardRecharge"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/opensans_bold"
+                        android:textColor="@color/textColor"
+                        android:textSize="12dp"/>
+
                 </LinearLayout>
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="18dp"
-                    android:text="@string/dataCardRecharge"
-                    android:fontFamily="@font/opensans_bold"
-                    android:textColor="@color/textColor"
-                    android:textSize="12dp"/>
-
-
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -158,49 +159,81 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_weight=".1"
-                android:layout_marginLeft="30dp"
                 android:clickable="true"
                 android:elevation="3dp"
                 android:focusableInTouchMode="true"
                 card_view:cardBackgroundColor="@color/white">
 
                 <LinearLayout
-                    android:layout_width="136dp"
-                    android:layout_height="109dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:background="@color/transparent"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="right"
-                        android:layout_marginTop="18dp"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
                         android:background="@mipmap/electricity" />
 
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/electricity"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/opensans_bold"
+                        android:textColor="@color/textColor"
+                        android:textSize="12dp"/>
+
                 </LinearLayout>
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/dthrecharge"
-                    android:layout_marginLeft="26dp"
-                    android:fontFamily="@font/opensans_bold"
-                    android:textColor="@color/textColor"
-                    android:textSize="12dp"/>
-
 
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
         </LinearLayout>
 
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="385dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/aeps_btn"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+
     </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <View
         android:id="@+id/lineView"
         android:layout_width="match_parent"
-        android:layout_height="2dp"
+        android:layout_height="1dp"
         android:layout_below="@+id/balanceShow"
         android:layout_marginTop="10dp"
         android:background="@color/InputtextColor" />
@@ -210,6 +243,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/appBar"
+        android:visibility="visible"
         android:orientation="horizontal">
 
         <LinearLayout
